@@ -34,6 +34,9 @@ public class Main {
 
 
        MongoCollection<Document> p = test.getCollection("auta");
+
+       MongoCar car = new MongoCar("Fiesta","Ford",null,"2005",100);
+       p.insertOne();
        //Document auto = new Document().append("")
 
 //        BsonArray a = new BsonArray();
@@ -64,4 +67,5 @@ public class Main {
        });
 
     }
+
 }
